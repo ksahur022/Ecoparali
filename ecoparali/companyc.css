@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .banner {
+    position: relative;
+    background-color: darkgreen;
+    height: 120px; /* adjust height as needed */
+    width: calc(100% + 40px); /* wider width */
+    margin-top: 20px; /* space from top */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center items */
+  }
+  
+  .logo {
+    height: 150px; /* adjust height as needed */
+    margin-left: auto; /* add margin between text and image */
+    transition: transform 0.3s ease; /* add transition effect */
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* scale the image when hovered */
+  }
+  
+  .company-name {
+    font-family: Arial, sans-serif; /* formal font */
+    font-size: 80px; /* big font size */
+    color: white; /* text color */
+    margin-right: 20px; /* add margin between text and image */
+  }
+  
+  .rectangle {
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgrey; /* grey background color */
+  border-radius: 20px; /* round border */
+  width: calc(100% - 320px); /* decrease the width */
+  padding: 20px; /* add padding inside the rectangle */
+  box-sizing: border-box;
+  }
+  
+  .rectangle h2 {
+    font-size: 24px; /* heading font size */
+    margin-bottom: 20px; /* add space below the heading */
+  }
+  
+  .rectangle p {
+    font-size: 18px; /* paragraph font size */
+    margin-bottom: 10px; /* add space between paragraphs */
+  }
+  

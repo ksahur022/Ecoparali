@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('images/mainimg.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgb(246, 246, 246);
+             border-radius: 5px;
+        }
+
+        .profile-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-info p {
+            margin: 5px 0;
+        }
+
+        .bid-history h2 {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="profile-section">
+            <h1>Farmer Profile</h1>
+            <div class="profile-info">
+                <p><strong>Name:</strong> Manoj Mahto</p>
+                <p><strong>Address:</strong> Kandela</p>
+                <p><strong>Land Amount:</strong> 10 acres</p>
+            </div>
+        </div>
+        <div class="bid-history">
+            <h2>Bid History</h2>
+            <table>
+                <tr> 
+                    <th>Buyer</th>
+                    <th>Crop Type</th>
+                    <th>Bid Amount</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Buyer 1</td>
+                    <td>Wheat</td>
+                    <td type="button">₹20500</td>
+                    <td>2023-05-9</td>
+                </tr>
+                <tr>
+                  <td>Buyer 2</td>
+                  <td>Wheat</td>
+                  <td>₹20000</td>
+                  <td>2023-05-12</td>
+              </tr>
+              <tr>
+                <td>Buyer 3</td>
+                <td>Wheat</td>
+                <td>₹21000</td>
+                <td>2023-05-10</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+                
+                <!-- More rows for additional bid history entries -->
+            </table>
+        </div>
+    </div>
+</body>
+</html>
