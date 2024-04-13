@@ -39,7 +39,7 @@ const farmerSchema = new mongoose.Schema({
     state: String,
     pinCode: String,
     country: String,
-  }
+  },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
 });

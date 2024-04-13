@@ -43,7 +43,25 @@ const getAllBids = async (req: Request, res: Response) => {
     }
 }
 
+const deleteBid = async function (req: Request, res: Response) {
+    try {
+
+        const bidId = req.params.bidId;
+
+        if(!bidId) throw new Error("Bid ID is required")
+
+        await Bid.findOneAndDelete({ bidId }).exec();
+        res.status(200).json({ message: "Bid deleted successfully" });
+
+    } catch(err: any) {
+        console.log(err)
+        res.status(500).json({ message: err.message })
+    }
+}
+
+
 export default {
     GET_BIDS_FOR_LISTING: getAllBidsForListing,
-    GET_ALL_BIDS: getAllBids
+    GET_ALL_BIDS: getAllBids,
+    DELETE: deleteBid
 }

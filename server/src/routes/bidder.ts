@@ -10,4 +10,6 @@ router.post("/register", checkBuyer, registerBid)
 router.get("/", checkBuyer, manageBid.GET_ALL_BIDS)
 router.get("/:listingId", checkBuyer, manageBid.GET_BIDS_FOR_LISTING)
 
+router.delete("/:bidId", checkBuyer, manageBid.DELETE)
+
 export default router;
