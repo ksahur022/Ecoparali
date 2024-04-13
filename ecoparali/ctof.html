@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>EcoParali</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="ctof.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <div class="full_bg">
+         <!-- header -->
+         <header class="header-area">
+            <div class="container-fluid">
+               <div class="row d_flex">
+                  <div class=" col-md-2 col-sm-3">
+                     <div class="logo">
+                        <a href="index.html">Eco<span>Parali</span></a>
+                     </div>
+                  </div>
+                  <div class="col-md-8 col-sm-9">
+                     <div class="navbar-area">
+                        <nav class="site-navbar">
+                           <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About</a></li>
+                             
+                              
+                              <li><a href="products.html">Products</a></li>
+                                <li><a href="partners.html">Partners</a></li>
+                              <!--
+                                <li><a href="testimonail.html">Partners</a></li> -->
+                              
+                              <li><a  href="contact.html">Contact Us</a></li>
+                           </ul>
+                           <button class="nav-toggler">
+                           <span></span>
+                           </button>
+                        </nav>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </header>
+         <!-- end header inner -->
+      </div>
+      <!-- contact -->
+      
+      
+
+      <div class="container1">
+         <h1>Farm Land Bidding Portal</h1><br>
+         <div class="filters">
+             <div class="dropdown">
+                 <button class="dropbtn">Area</button>
+                 <div class="dropdown-content" id="areaDropdown">
+                     <a href="cotf.html">Punjab</a>
+                     <a href="#">Uttar Pradesh</a>
+                     <a href="#">Haryana</a>
+                     <a href="#">Bihar</a>
+                     <a href="#">Madhya Pradesh</a>
+                     <a href="#">Gujarat</a>
+                 </div>
+             </div>
+             <div class="dropdown">
+                 <button class="dropbtn">Land Size</button>
+                 <div class="dropdown-content" id="sizeDropdown">
+                     <a href="#">20 acres</a>
+                     <a href="#">15 acres</a>
+                     <a href="#">10 acres</a>
+                     <a href="#">12 acres</a>
+                     <a href="#">25 acres</a>
+                 </div>
+             </div>
+             <div class="dropdown">
+                 <button class="dropbtn">Crop Type</button>
+                 <div class="dropdown-content" id="cropDropdown">
+                     <a href="#">Wheat</a>
+                     <a href="#">Rice</a>
+                     <a href="#">Cotton</a>
+                     <a href="#">Tea</a>
+                     <a href="#">Maize</a>
+                 </div>
+             </div>
+             <button onclick="applyFilters()">Apply</button>
+         </div>
+         <div class="results" id="searchResults">
+             <!-- Results will be displayed here -->
+             <div class="result">
+                 <h4>Farmer: Manoj Mahto</h4>
+                 <p>Contact: 9876543210</p>
+                 <p>Land Area: 20 acres</p>
+                 <p>Location: Punjab</p>
+                 <p>Crop Type: Wheat</p>
+                 <input type="number" class="bid-input" placeholder="Enter bid amount">
+                 <button>Bid</button>
+             </div>
+             <div class="result">
+                 <h4>Farmer: Sharla Devi</h4>
+                 <p>Contact: 8765432109</p>
+                 <p>Land Area: 15 acres</p>
+                 <p>Location: Uttar Pradesh</p>
+                 <p>Crop Type: Rice</p>
+                 <input type="number" class="bid-input" placeholder="Enter bid amount">
+                 <button>Bid</button>
+             </div>
+             <div class="result">
+                 <h3>Farmer: Rajesh Patel</h3>
+                 <p>Contact: 7654321098</p>
+                 <p>Land Area: 10 acres</p>
+                 <p>Location: Gujarat</p>
+                 <p>Crop Type: Cotton</p>
+                 <input type="number" class="bid-input" placeholder="Enter bid amount">
+                 <button>Bid</button>
+             </div>
+             <div class="result">
+                 <h3>Farmer: Anita Das</h3>
+                 <p>Contact: 6543210987</p>
+                 <p>Land Area: 12 acres</p>
+                 <p>Location: West Bengal</p>
+                 <p>Crop Type: Tea</p>
+                 <input type="number" class="bid-input" placeholder="Enter bid amount">
+                 <button>Bid</button>
+             </div>
+             <div class="result">
+                 <h3>Farmer: Ram Charan</h3>
+                 <p>Contact: 5432109876</p>
+                 <p>Land Area: 25 acres</p>
+                 <p>Location: Telangana</p>
+                 <p>Crop Type: Maize</p>
+                 <input type="number" class="bid-input" placeholder="Enter bid amount">
+                 <button>Bid</button>
+             </div>
+         </div>
+     </div>
+     
+
+
+
+      <!-- end contact -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                         <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3  text_align_left">
+                              <h3>Sign in</h3>
+                              <form id="colof" class="form_subscri">
+                                 <input class="newsl" placeholder="Enter Email" type="text" name="Email">
+                                 <button class="subsci_btn"><img src="images/new.png" alt="#"/></button>
+                              </form>
+                              
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3> Explore</h3>
+                              <ul class="menu_footer">
+                                 <li><a href="index.html">Home</a></li>
+                                 <li><a href="about.html">About</a></li>
+                                 <li><a href="service.html">Services</a></li>
+                                 
+                                 <li><a href="testimonail.html">Partners</a></li>
+                                 <li><a href="contact.html">Login</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3 text_align_left">
+                              <h3></h3>
+                              <ul class="recent">
+                                 <li></li>
+                                 <li></li>
+                              </ul>
+                           </div>
+                        </div>
+                         <div class="col-lg-3 col-md-6">
+                           <div class="hedingh3  flot_right text_align_left">
+                              <h3>ContacT</h3>
+                              <ul class="top_infomation">
+                                 <li><i class="fa fa-phone" aria-hidden="true"></i>
+                                    +91 7644014585
+                                 </li>
+                                 <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="Javascript:void(0)">ecoparali@gmail.com</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+             
+            <div class="copyright">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class="col-md-8">
+                        <p>© 2024 All Rights Reserved.<a href="https://html.design/"> </a></p>
+                     </div>
+                     <div class="col-md-4">
+                           <ul class="social_icon ">
+                              <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                              <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li><a href="Javascript:void(0)"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                           </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
