@@ -1,6 +1,6 @@
 # About the project
 
-EcoParali is a project aimed at addressing environmental concerns associated with stubble burning in agricultural practices. 
+EcoParali http://127.0.0.1:5500/index.html is a project aimed at addressing environmental concerns associated with stubble burning in agricultural practices. 
 It provides an innovative and sustainable solution for managing stubble waste to mitigate the negative impact on air quality and foster a healthier ecosystem.
 
 ## Features
