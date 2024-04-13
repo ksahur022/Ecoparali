@@ -6,6 +6,8 @@ import multer from "multer";
 
 import farmerRouter from "./routes/farmer";
 import buyerRouter from "./routes/buyer"
+import listingRouter from "./routes/listing"
+import bidRouter from "./routes/bidder"
 
 dotenv.config();
 
@@ -48,7 +50,9 @@ app.post("/upload", upload.single("pic"), async (req: Request, res: Response) =>
 
 // app.
 app.use("/api/farmer", farmerRouter);
-app.use("/api/buyer", buyerRouter)
+app.use("/api/buyer", buyerRouter);
+app.use("/api/listing", listingRouter);
+app.use("/api/bid", bidRouter);
 
 mongoose.connect(process.env.MONGO_URI as string).then((data) => {
   app.listen(port, () => {
